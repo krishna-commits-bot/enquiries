@@ -179,6 +179,18 @@ These commands after initialization of capacitor are to generate the actual nati
 
 ---
 
+### 📆 Step 3.3.1: Build Your React App
+
+Before you can run your app on a device or emulator, you need to build your React app. This step compiles your React code into static files that can be served by Capacitor.
+
+```bash
+npm run build
+```
+
+This command generates a build folder containing the static files of your React application. Building the project ensures that the latest version of your app is used when syncing with the native projects.
+
+---
+
 ### ✏️ Step 3.4: Update `capacitor.config.json` (Important for Create React App)
 
 By default, Create-React-App serves content from the root during development, but Capacitor might look for an `index.html` at the root of the web asset directory. We need to ensure Capacitor knows where to look, especially for live reload.
