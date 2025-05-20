@@ -191,6 +191,18 @@ This command generates a build folder containing the static files of your React 
 
 ---
 
+### 📆 Step 3.3.2: Sync Your Project
+
+After building your React app, sync your web code with the native platform projects. This step copies the built web assets into the native project folders.
+
+```bash
+npx cap sync
+```
+
+The npx cap sync command ensures that the latest version of your web app is included in the native builds and updates any Capacitor plugins and dependencies.
+
+---
+
 ### ✏️ Step 3.4: Update `capacitor.config.json` (Important for Create React App)
 
 By default, Create-React-App serves content from the root during development, but Capacitor might look for an `index.html` at the root of the web asset directory. We need to ensure Capacitor knows where to look, especially for live reload.
